@@ -56,6 +56,8 @@ RUN npm install
 #Bundle app source
 COPY . /usr/src/app
 
+RUN mkdir /usr/src/app/uploads
+
 EXPOSE 3000
 ENTRYPOINT []
 CMD [ "node", "app.js" ]
